@@ -3,14 +3,14 @@ Boxes = new Meteor.Collection("boxes");
 if (Meteor.isClient) {
   Session.set("color", "#aaa");
 
-UI.body.helpers({
+Template.body.helpers({
   boxes: function () {
     return Boxes.find();
   },
   colors: ["#FFBF27", "#E17244", "#483F36", "#4BC5FF", "#F7AE52"]
 });
 
-UI.body.events({
+Template.body.events({
   "click .swatch": function () {
     Session.set("color", this.valueOf());
   },

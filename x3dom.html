@@ -7,7 +7,8 @@
 		{{/each}}
 	</div>
 
-  <x3d><scene>
+  <x3d>
+  	<scene>
   	<!-- camera -->
   	<navigationinfo type="turntable"></navigationinfo>
   	<viewpoint position="8.19 12.33 19.5"
@@ -16,7 +17,7 @@
   	<!-- ground -->
   	<transform rotation="-1.5707 0 0 1.5707">
   	<shape>
-  		<appearance><material diffuseColor="#4A9">
+  		<appearance><material diffuseColor="#4F82FF">
   			</material></appearance>
 	  	<plane size="20 20"></plane>
 		</shape>
@@ -30,7 +31,9 @@
 		        ambientIntensity="0.1"></material></appearance>
 		      <box size="1 1 1"></box>
 		    </shape>
-		  </transform>
+	  	</transform>
     {{/each}}
-	</scene></x3d>
+    
+	</scene>
+  </x3d>
 </body>
